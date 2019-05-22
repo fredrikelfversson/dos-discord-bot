@@ -123,7 +123,6 @@ client.on("message", message => {
         console.log("printing emojis")
         var m = ""
         emojis = client.getEmojis.all()
-        console.log(emojis)
         emojis.sort(function(first, second) {
             return second.amount - first.amount;
         });
